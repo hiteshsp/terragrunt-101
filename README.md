@@ -125,5 +125,4 @@ inputs = {
 * Execute whatever Terraform command you specified in that temporary folder.
 * Pass any variables defined in the `inputs = { …​ }` block as environment variables (prefixed with TF_VAR_ to your Terraform code. Notice how the inputs block in `stage/app/terragrunt.hcl` deploys fewer and smaller instances than prod.
 
-
-### Keep your remote state configuration DRY
+>**Note**: Use `tee live/{dev,test}/{app,mysql}/terragrunt.hcl < terragrunt.hcl` to quickly copy initial terragrunt.hcl
