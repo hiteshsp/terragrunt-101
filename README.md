@@ -65,6 +65,8 @@ variable "instance_type" {
 }
 ```
 
+![Terragrunt structure](static/terragrunt.png)
+
 ```
 └── live
     ├── prod

@@ -21,6 +21,10 @@ terraform {
   }
 }
 
+include "root" {
+  path = find_in_parent_folders()
+}
+
 inputs = merge(
   local.common_vars.inputs, {}
 )
